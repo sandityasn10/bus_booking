@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.destination {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.seats {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.seat {
+    width: 50px; /* Increased size for a bus seat look */
+    height: 50px; /* Increased size for a bus seat look */
+    margin: 0 10px; /* Space between seats */
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.seat:hover {
+    background-color: #d3d3d3; /* Change color on hover */
+}
+
+.seat.selected {
+    background-color: green; /* Color for selected seats */
+    transform: scale(1.1); /* Slightly enlarge selected seats */
+}
+
+.seat[data-filled="true"] {
+    background-color: red; /* Color for filled seats */
+    cursor: not-allowed;
+}
+
+.bus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 300px; /* Width of the bus */
+    height: 300px; /* Height of the bus */
+    margin: 0 auto;
+    background-color: #eaeaea; /* Bus body color */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.bus::before {
+    content: '';
+    position: absolute;
+    top: -30px; /* Position the windshield */
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: #a0a0a0; /* Windshield color */
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+}
+
+#total {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}

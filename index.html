@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Seat Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bus Seat Selection</h1>
+    
+    <div class="destination">
+        <label for="destination">Select Destination:</label>
+        <select id="destination">
+            <option value="cityA" data-price="50">City A - $50</option>
+            <option value="cityB" data-price="70">City B - $70</option>
+            <option value="cityC" data-price="100">City C - $100</option>
+        </select>
+    </div>
+
+    <div class="seats">
+        <h2>Select Your Seats</h2>
+        <div class="seat-row">
+            <div class="seat" data-seat="1" data-filled="false">1</div>
+            <div class="seat" data-seat="2" data-filled="true">2</div>
+            <div class="seat" data-seat="3" data-filled="false">3</div>
+            <div class="seat" data-seat="4" data-filled="false">4</div>
+        </div>
+        <div class="seat-row">
+            <div class="seat" data-seat="5" data-filled="true">5</div>
+            <div class="seat" data-seat="6" data-filled="false">6</div>
+            <div class="seat" data-seat="7" data-filled="false">7</div>
+            <div class="seat" data-seat="8" data-filled="false">8</div>
+        </div>
+        <div class="seat-row">
+            <div class="seat" data-seat="9" data-filled="false">9</div>
+            <div class="seat" data-seat="10" data-filled="true">10</div>
+            <div class="seat" data-seat="11" data-filled="false">11</div>
+            <div class="seat" data-seat="12" data-filled="false">12</div>
+        </div>
+        <div class="seat-row">
+            <div class="seat" data-seat="13" data-filled="false">13</div>
+            <div class="seat" data-seat="14" data-filled="false">14</div>
+            <div class="seat" data-seat="15" data-filled="true">15</div>
+            <div class="seat" data-seat="16" data-filled="false">16</div>
+        </div>
+    </div>
+
+    <h3 id="total">Total: $0</h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
